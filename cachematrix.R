@@ -2,12 +2,8 @@
 ## 1. setmat--sets the value of global variable x to the value of matrix input
 ## 2. getmat--returns matrix x
 ## 3. setinv--Sets the global variable invmat to the value of invmatrix
-<<<<<<< HEAD
 ## 4. getinv--Returns the Global variable invmat
-=======
 ## 4. getinv--Returns the Global variable invmat 
->>>>>>> origin/master
-
 makeCacheMatrix <- function(x = matrix()) {#defining function with attributes x as matrix
         invmat<-NULL                  #Initializing invmat as local variable to NULL
         setmat<-function(y=matrix()){ #defining setmat function to set the matrix
@@ -33,8 +29,5 @@ cacheSolve <- function(x, ...) {
         invmat<-solve(mat,...)                #Inversing of matrix using Solve function
         x$setinv(invmat)                      #Setting the inverse matrix in global variable invmat
         invmat                                #Returns the value of inverse of matrix
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> origin/master
+
